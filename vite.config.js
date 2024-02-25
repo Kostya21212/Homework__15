@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/vite-homeworks/",
+  base: "/Homework__15/",
   build: {
     rollupOptions: {
       input: {
