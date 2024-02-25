@@ -63,7 +63,7 @@ console.log(additionalPositiveElements())
 
 function theGreatestNum(arr){
   const max = arr.reduce((max,current) => Math.max(max,current))
-  const zeroMas = arr.map(item => item === max ? item : 0 )
-  return `10.Знайти найбільший серед елементів масиву, ост альні обнулити : ${max} і інші ${zeroMas}`
+  const zeroMas = JSON.stringify(arr.map(item => item === max ? item : 0 ))
+  return `10.Знайти найбільший  серед елементів масиву, остальні обнулити : ${max} і інші ${zeroMas}`
 }
 console.log(theGreatestNum(massive))
